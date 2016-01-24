@@ -3,12 +3,12 @@
  */
 var wpi = require('wiring-pi');
 
-var CLK = 0;
-var DIO = 2;
-var CS  = 3;
+var CLK = 17;
+var DIO = 27;
+var CS  = 22;
 
 module.exports.init = function() {
-  wpi.setup('wpi');
+  wpi.setup('gpio');
 };
 
 module.exports.getValue = function() {
